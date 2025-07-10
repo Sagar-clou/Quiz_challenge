@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUZ Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quiz Challenge</h1>
+    <img src="quiz image.jpg" alt="Quiz Image" style="width:auto; height:auto;">
+
+    <form id="loginform">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <div id="student-details">
+        <table>
+            <tr>
+                <td align="right">NAME</td>
+                <td><input type="text" name="NAME" id="name" required></td>
+            </tr>
+            <tr>
+                <td align="right">ROLL NO</td>
+                <td><input type="text" name="ROLL_NO" id="rollno" required></td>
+            </tr>
+            <tr>
+                <td align="right">CLASS</td>
+                <td><input type="text" name="CLASS" id="class" required></td>
+            </tr>
+            <tr>
+                <td align="right">SECTION</td>
+                <td><input type="text" name="SECTION" id="section" required></td>
+            </tr>
+            <tr>
+                <td align="right"></td>
+                <td><button type="button" id="submit-details">SUBMIT</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="quiz-container" style="display:none;">
+        <div id="questions"></div>
+        <button id="submit-quiz">Submit Quiz</button>
+    </div>
+
+    <div id="results" style="display:none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
